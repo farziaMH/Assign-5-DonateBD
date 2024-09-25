@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <!-- font inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+     <!-- tailwind + daisy ui  -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+
+     <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+     <!-- tailwind cdn -->
+     <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+              
+            }
+          }
+        }
+      </script>
+    <style>
+        .font-inter{
+            font-family: "Inter", system-ui;
+        }
+        
+    </style>
+
+
+</head>
+<body class="font-inter bg-white">
+    <header class="container mx-auto sticky top-0 z-10">
+        <nav class=" bg-[#F9F7F3] pb-3  py-5">
+            <div class="navbar flex flex-col md:flex-row mx-auto space-y-4 md:space-y-0">
+                <div class="navbar-start">
+                  <a class="btn btn-active bg-[#32CD32] hover:bg-[#b2ff4e] px-7 py-2 font-bold w-full md:w-fit" href="index.html"><button id="home-button" >Home</button></a>   
+                </div>
+                <div class="navbar-center">
+                    <img src="assets/logo.png" alt="">
+                  <a class="btn hover:bg-lime-200 bg-[#F9F7F3] border-none shadow-none text-xl font-bold">Donate Bangladesh</a>
+                </div>
+                <div class="navbar-end space-x-2 font-bold justify-center md:justify-end">
+                   <img class="" src="assets/coin.png" alt="">
+                   <p id="your-balance" class="opacity-85">10500</p>
+                   <p class="opacity-85">BDT</p>
+                </div>
+              </div>
+        </nav>
+     </header>
+
+     <main>
+        <section class="container mx-auto my-20">
+
+          <h2 class="text-2xl font-bold border-none p-1 shadow-xl mb-10 w-fit">Important FAQ  <i class="fa-solid fa-question" style="color: #5acf0c;"></i></h2>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model(DOM) ?</div>
+            <div class="collapse-content">
+              <p>The <span class="text-lg font-semibold text-red-700">Document Object Model (DOM)</span> is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from DOM ?</div>
+            <div class="collapse-content">
+              <p>There are many way to select an element from DOM . among them two are popular one is Using <span class="text-lg font-semibold text-red-700">"getElementById"</span> it allows us to select an element by its ID. Another <span class="text-lg font-semibold text-red-700">"getElementsByClassName"</span> select an element by its ClassName.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is event Delegation in the context of DOM , and why is it useful ?</div>
+            <div class="collapse-content">
+              <p>It is an <span class="text-lg font-semibold text-red-700">event-handling pattern</span> that allows you to handle events at a higher level in the DOM tree other than the level where the event was first received.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM ?</div>
+            <div class="collapse-content">
+               <p>You can manipulate an element's attributes using methods like <span class="text-lg font-semibold text-red-700">getAttribute()</span>, <span class="text-lg font-semibold text-red-700">setAttribute()</span>, <span class="text-lg font-semibold text-red-700">createElement()</span>, and modify <span class="text-lg font-semibold text-red-700">styles</span> via the style property or by adding/removing CSS classes. This allows dynamic changes to an element's behavior and appearance</p>
+            </div>
+          </div>
+        </section>
+     </main>
+
+     <footer id="footer-section" class="mt-12">
+      <div class="container mx-auto border-1 bg-[#e0dedb] h-24 w-full">
+
+      </div>
+   </footer>
+
+   <script src="blog"></script>
+</body>
+</html>
