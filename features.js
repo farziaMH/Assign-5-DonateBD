@@ -14,6 +14,5 @@ document.getElementById('history-btn').addEventListener('click', function(){
     // color on button if clicked
     this.style.backgroundColor='limegreen'
     document.getElementById('donation-btn').style.backgroundColor='white'
-    // hide footer
-    // document.getElementById('footer-section').classList.add('hidden')
+  
 })

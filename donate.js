@@ -2,7 +2,7 @@
 document.getElementById('donate-feni').addEventListener('click',function(event){
     event.preventDefault()
     const amount = getInputFieldValueById('amount-donate-feni');
-    console.log(amount);
+    // console.log(amount);
 
     const balance =getTextField('your-balance');
     // console.log(balance)
